@@ -21,7 +21,7 @@ jobs:
         inputs:
           containerRegistry: $(containerRegistry)
           buildContext: build-agents
-          Dockerfile: 'build-agents/Dockerfile'
+          Dockerfile: 'Dockerfile'
           repository: $(imageName)
           command: build
           tags: |
