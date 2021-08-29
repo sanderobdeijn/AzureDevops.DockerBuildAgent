@@ -1,0 +1,10 @@
+version: "3.3"  # optional since v1.27.0
+services:
+  azuredevops-buildagent:
+    build: .
+    ports:
+      - "8080:80"
+    environment: 
+      - AZP_URL=https://dev.azure.com/XPRTZ
+      - AZP_POOL=Sander
+      - AZP_TOKEN={PAT Token}
