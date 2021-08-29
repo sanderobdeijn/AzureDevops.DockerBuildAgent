@@ -10,7 +10,7 @@ pool:
 
 variables:
   containerRegistry: dockerhub-sanderobdeijn
-  imageName: azuredevops.buildagent
+  imageName: sanderobdeijn/azuredevops.buildagent
 
 jobs:
   - job:
