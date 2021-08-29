@@ -30,6 +30,7 @@ jobs:
         displayName: 'Push the Docker image to Dockerhub'
         inputs:
           containerRegistry: $(containerRegistry)
+          repository: $(imageName)
           command: 'push'
           imageName: '$(ImageName)'
         condition: and(succeeded(), ne(variables['Build.Reason'], 'PullRequest')) 
