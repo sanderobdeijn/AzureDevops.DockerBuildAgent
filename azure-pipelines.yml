@@ -20,7 +20,6 @@ jobs:
         displayName: Build
         inputs:
           containerRegistry: $(containerRegistry)
-          buildContext: build-agents
           Dockerfile: 'Dockerfile'
           repository: $(imageName)
           command: build
