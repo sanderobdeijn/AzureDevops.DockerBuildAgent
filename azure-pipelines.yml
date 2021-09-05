@@ -33,4 +33,7 @@ jobs:
           repository: $(imageName)
           command: 'push'
           imageName: '$(ImageName)'
+          tags: |
+            $(Build.BuildId)
+            latest
         condition: and(succeeded(), ne(variables['Build.Reason'], 'PullRequest')) 
